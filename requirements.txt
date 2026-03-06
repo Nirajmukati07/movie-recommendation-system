@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 fastapi
 uvicorn
 pandas
+=======
+fastapi
+uvicorn
+pandas
+>>>>>>> f495ca5afcb06abc29e8acfda63b0e5322580cef
 scikit-learn

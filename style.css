@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(135deg,#141e30,#243b55);
@@ -54,3 +55,61 @@ transition:0.3s;
 #result li:hover{
 transform:scale(1.05);
 }
+=======
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#141e30,#243b55);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+h2{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+input{
+    padding:12px;
+    width:250px;
+    border-radius:8px;
+    border:none;
+    font-size:16px;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    background:#ff4b2b;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+button:hover{
+    background:#ff416c;
+}
+
+#result{
+margin-top:40px;
+list-style:none;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+}
+
+#result li{
+background:#1f2937;
+padding:15px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+#result li:hover{
+transform:scale(1.05);
+}
+>>>>>>> f495ca5afcb06abc29e8acfda63b0e5322580cef
