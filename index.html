@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Movie Recommender</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h2>🎬 Movie Recommendation System</h2>
+
+<input type="text" id="movie" placeholder="Enter movie name" onkeypress="handleKey(event)">
+<button onclick="getMovies()">Recommend</button>
+
+<ul id="result"></ul>
+
+<script>
+function handleKey(event) {
+    if (event.key === "Enter") {
+        getMovies();
+    }
+}
+
+async function getMovies(){
+
+let movie=document.getElementById("movie").value;
+
+let response=await fetch(
+"http://127.0.0.1:8000/recommend/"+encodeURIComponent(movie)
+);
+
+let data=await response.json();
+
+let list=document.getElementById("result");
+
+list.innerHTML="";
+
+data.recommendations.forEach(m=>{
+
+let li=document.createElement("li");
+
+li.textContent=m;
+
+list.appendChild(li);
+
+});
+
+}
+
+</script>
+</body>
+
+</html>
