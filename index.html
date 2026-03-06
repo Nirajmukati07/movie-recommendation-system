@@ -30,7 +30,7 @@ async function getMovies(){
 let movie=document.getElementById("movie").value;
 
 let response=await fetch(
-"http://127.0.0.1:8000/recommend/"+encodeURIComponent(movie)
+"https://movie-recommendation-system-8yz4.onrender.com/recommend/"+encodeURIComponent(movie)
 );
 
 let data=await response.json();
@@ -53,5 +53,6 @@ list.appendChild(li);
 
 </script>
 </body>
+
 
 </html>
