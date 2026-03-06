@@ -44,11 +44,11 @@ gap:25px;
 }
 
 #result li{
-background:#1f2937;
+background:#dddede;
 padding:15px;
 border-radius:10px;
 text-align:center;
-box-shadow:0 4px 15px rgba(0,0,0,0.3);
+box-shadow:0 4px 15px rgba(36, 14, 126, 0.3);
 transition:0.3s;
 }
 
