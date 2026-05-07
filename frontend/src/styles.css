@@ -24,6 +24,11 @@ body {
   color: var(--text);
 }
 
+button,
+input {
+  font: inherit;
+}
+
 #root {
   min-height: 100vh;
 }
@@ -52,6 +57,16 @@ body {
   margin: 0;
   font-size: clamp(2.4rem, 5vw, 4rem);
   line-height: 1.02;
+}
+
+.tag {
+  display: inline-flex;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(94, 234, 212, 0.16);
+  color: #c8faf3;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .subtitle {
@@ -133,7 +148,8 @@ body {
   transition: background 0.2s ease;
 }
 
-.suggestions li:hover {
+.suggestions li:hover,
+.suggestions li.active {
   background: rgba(94, 234, 212, 0.08);
 }
 
